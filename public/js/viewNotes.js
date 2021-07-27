@@ -37,6 +37,9 @@ const createCard = (note) => {
                 <header class="card-header">
                     <p class="card-header-title">${note.title}</p>
                 </header>
+                <header class="card-header">
+                    <p class="card-header-categroy">${note.category}</p>
+                </header>
                 <div class="card-content">
                     <div class="content">${note.text}</div>
                 </div>

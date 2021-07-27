@@ -15,7 +15,7 @@
     <script defer src="/__/firebase/8.3.1/firebase-auth.js"></script>
     <script defer src="/__/firebase/8.3.1/firebase-database.js"></script>
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-    <script src="js/writeNote.js"></script>
+    <script defer src="js/writeNote.js"></script>
   </head>
   <body>
 
@@ -26,6 +26,7 @@
 
             <!-- WELCOME HERO -->
             <div class="column is-two-thirds has-text-left">
+              <h1 id = "welcomeText" class="title is-1">Welcome, </h1>
               <h1 class="title is-1">What's on your mind?</h1>
               <h1 class="title is-3">
                 “The most beautiful things are those that madness prompts and reason writes."
@@ -45,6 +46,15 @@
                   <input class="input is-medium" type="text" id="noteTitle">
                 </div>
               </div>
+
+               <button id = "personalButton" class="button is-link is-fullwidth has-text-weight-medium is-medium">Personal</button>
+             <br>
+              <button id = "workButton" class="button is-link is-fullwidth has-text-weight-medium is-medium">Work</button>
+               <br>
+              <button id = "randomButton" class="button is-link is-fullwidth has-text-weight-medium is-medium">Random</button>
+               <br>
+              
+
               <div class="field">
                 <label class="label">Note</label>
                 <div class="control">
