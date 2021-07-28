@@ -1,3 +1,5 @@
+const categories = document.querySelector("#labelSort");
+
 window.onload = event => {
 
     firebase.auth().onAuthStateChanged(user => {
@@ -29,6 +31,8 @@ const renderDataAsHtml = (data) => {
     }
     document.querySelector("#app").innerHTML = cards;
 }
+
+
 
 const createCard = (note) => {
     return `

@@ -27,7 +27,19 @@ window.onload = (event) => {
 personalButton.addEventListener("click", (e) => {
     console.log("personal clicked");
     categoryChoice = "Personal";
-}) 
+});
+
+console.log("hello are you dumb");
+
+workButton.addEventListener("click", (e) => {
+    console.log("work clicked");
+    categoryChoice = "Work";
+});
+
+randomButton.addEventListener("click", (e) => {
+    console.log("random clicked");
+    categoryChoice = "Random";
+});
 
 
 const handleNoteSubmit = () => {
